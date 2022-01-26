@@ -377,12 +377,36 @@ padding: 25px 0;
   justify-content: center;
 }
 
-.work-list >li{
-    margin-right: 30px;
+.work_list_item{
+  margin-right: 30px;
+
+  position: relative;
 }
 
-.work-list >li:last-child {
+.work_list_item:last-child {
   margin-right: 0;
+}
+
+.work_list_text{
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50% );
+
+  width: 100%;
+
+  padding: 27px 80px;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .our_work,
@@ -412,6 +436,7 @@ padding: 25px 0;
   display: flex;
   justify-content: center;
   
+
 }
 .team_list{
   margin-right: 28px;
