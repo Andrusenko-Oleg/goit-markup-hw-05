@@ -129,6 +129,7 @@ padding: 25px 0;
 
 .list-nav >li {
   margin-left: 50px;
+  position: relative;
 }
 
 .list-nav >li:first-child{
@@ -158,7 +159,19 @@ padding: 25px 0;
   color: var(--accent);
 }
 
+.link-nav::after{
+  content: "";
 
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent);
+
+  margin-top: 30px;
+
+  position: absolute;
+  border-radius: 2px;
+}
 
 .ause-nav {
   display: flex;
