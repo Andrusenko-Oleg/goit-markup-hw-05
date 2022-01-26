@@ -627,44 +627,35 @@ button {
 
 .product_img_box{
   position: relative;
-}
-
-.product_img_box:hover::before  {
-  opacity: 1;
-}
-
-.product_img_box::before  {
-  content: "";
-  position: absolute;
-
-  display: inline-block;
-  width: 100%;
-  height: 100%;
   
-  background-color: rgba(33, 150, 243, 0.9);
-  
-  opacity: 0;
 }
 
 .product_img_text{
   position: absolute;
   top: 0;
-  left: 0;
+  height: 100%;
   padding: 64px 24px;
 
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-
   color: #FFFFFF;
-  opacity: 0;
 
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  opacity: 0;  
 }
 
-.product_img_text:hover{
+.product_list_linc:hover .product_img_text {
+  transform: translateY(0);
   opacity: 1;
-}
 
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
