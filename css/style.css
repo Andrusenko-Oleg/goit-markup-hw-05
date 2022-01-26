@@ -642,7 +642,7 @@ button {
 
 .product_img_box{
   position: relative;
-  
+  overflow: hidden;
 }
 
 .product_img_text{
@@ -659,17 +659,12 @@ button {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-
-  opacity: 0;  
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product_list_linc:hover .product_img_text {
   transform: translateY(0);
-  opacity: 1;
-
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
